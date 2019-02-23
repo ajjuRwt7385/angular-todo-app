@@ -1,0 +1,28 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/buttons";
+
+.todo {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $color_dark_gray;
+  padding: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 3px auto;
+  span {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    padding: 0 20px;
+  }
+  &.is-complete {
+    background: $color_light_gray;
+    span {
+      text-decoration: line-through;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import './variables';
+// @import './mixins';
+button{
+    cursor: pointer;
+    transition:all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.round{
+        width:30px;
+        min-width: 30px;
+        height:30px;
+        border-radius: 100%;
+        overflow: hidden;
+        border: 1px solid $color_border;
+        font-size: 20px;
+        line-height: 0em;
+    }
+    &.danger {
+        color: $danger_button_color;
+        background: $danger_button_background;
+        border-color: $danger_button_background;
+        &:hover{
+            color: $danger_button_color__hover;
+            background: $danger_button_background__hover;
+        }
+    }
+}
